@@ -1,0 +1,21 @@
+# Add `. ~/.config/.aliases` to your .bashrc
+
+# for the dotfiles git repository
+alias dotfiles="/usr/bin/git --git-dir=$HOME/.config/.dotfiles/ --work-tree=$HOME/.config/"
+
+# easy edit and source bashrc
+alias bsh="nvim ~/.bashrc"
+alias sbsh="source ~/.bashrc"
+
+# easy edit configs
+alias nc="nvim ~/.config/nvim/"
+alias gc="nvim ~/.config/ghostty/config"
+
+# i'am lazy
+alias n="nvim"
+
+# open pdf's via cli
+alias open="xdg-open"
+
+# git commands
+alias fp="git fetch && git pull"
