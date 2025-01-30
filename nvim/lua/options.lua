@@ -16,3 +16,5 @@ vim.opt.incsearch = true
 vim.opt.ignorecase = true
 
 vim.opt.linebreak = true
+
+vim.opt.autochdir = true
