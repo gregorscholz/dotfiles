@@ -8,7 +8,7 @@ alias bsh="nvim ~/.bashrc"
 alias sbsh="source ~/.bashrc"
 
 # easy edit configs
-alias nc="nvim ~/.config/nvim/"
+alias nc="nvim ~/.config/nvim/init.lua"
 alias gc="nvim ~/.config/ghostty/config"
 
 # i'am lazy
