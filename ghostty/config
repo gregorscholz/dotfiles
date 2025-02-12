@@ -42,8 +42,9 @@
 # # Just for example:
 # resize-overlay-duration = 4s 200ms
 theme = rose-pine
-window-decoration = false
 
 font-feature = -liga
 font-feature = -calt
 font-feature = -dlig
+
+macos-option-as-alt = left
