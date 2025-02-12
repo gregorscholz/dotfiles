@@ -11,5 +11,5 @@ Use them at your own risk.
 
 #### Neovim
 
-[Neovim](https://neovim.io/), a "Hyperextensible Vim-based text editor."
+[Neovim](https://neovim.io/), a "Hyperextensible Vim-based text editor."  
 In combination with [lazy.nvim](https://lazy.folke.io/), "A modern plugin manager for Neovim."
