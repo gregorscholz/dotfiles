@@ -19,3 +19,5 @@ alias open="xdg-open"
 
 # git commands
 alias fp="git fetch && git pull"
+
+alias ls="ls -lA"
