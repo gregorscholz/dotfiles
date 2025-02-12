@@ -45,7 +45,10 @@ return {
 		lspconfig.ltex.setup({
 			settings = {
 				ltex = {
-					language = { "de-DE", "en-US" },
+					-- When using the language code "auto", LTEX will try to detect the language of the document.
+					-- This is not recommended, as only generic languages like "en" or "de" will be detected and thus no spelling errors will be reported.
+					-- good enough for me
+					language = "auto",
 				},
 			},
 		})
