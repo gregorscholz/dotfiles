@@ -8,7 +8,7 @@ return {
 			"bashls",
 			"marksman",
 			"ltex",
-			--"java_language_server",
+			"pyright",
 		},
 	},
 }
