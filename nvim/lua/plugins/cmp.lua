@@ -17,11 +17,9 @@ return {
 		return {
 			snippet = {
 				expand = function(args)
-					--vim.snippet.expand(args.body)
 					require("luasnip").lsp_expand(args.body)
 				end,
 			},
-			completeopt = "menu,menuone,noinsert",
 			mapping = cmp.mapping.preset.insert({
 				["<C-n>"] = cmp.mapping.select_next_item(),
 				["<C-p>"] = cmp.mapping.select_prev_item(),
@@ -34,6 +32,7 @@ return {
 			sources = cmp.config.sources({
 				{ name = "nvim_lsp" },
 				{ name = "luasnip" },
+				{ name = "jupynium" },
 			}, {
 				{ name = "buffer" },
 			}),

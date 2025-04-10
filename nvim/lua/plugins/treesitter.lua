@@ -9,9 +9,7 @@ return {
 			"markdown_inline",
 			"kotlin",
 			"latex",
-		},
-		highlight = {
-			["TODO"] = "",
+			"python",
 		},
 	},
 }
