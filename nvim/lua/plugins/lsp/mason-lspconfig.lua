@@ -8,6 +8,7 @@ return {
 			"bashls",
 			"marksman",
 			"ltex",
+			"lemminx",
 			"pyright",
 		},
 	},

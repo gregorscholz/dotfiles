@@ -5,6 +5,8 @@ return {
 		formatters_by_ft = {
 			lua = { "stylua" },
 			kotlin = { "ktfmt" },
+			xml = { "xmllint" },
+			["*.sdf"] = { "xmllint" },
 			python = { "isort", "black" },
 		},
 		default_format_opts = {

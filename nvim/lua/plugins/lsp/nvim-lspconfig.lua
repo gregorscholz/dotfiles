@@ -50,6 +50,13 @@ return {
 			},
 		})
 
+		lspconfig.lemminx.setup({
+			filetypes = {
+				"xml",
+				"sdf",
+			},
+		})
+
 		lspconfig.pyright.setup({})
 	end,
 }
