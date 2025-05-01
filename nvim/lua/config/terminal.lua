@@ -8,7 +8,7 @@ local state = {
 local function create_floating_window(opts)
 	opts = opts or {}
 	local width = opts.width or math.floor(vim.o.columns * 0.8)
-	local height = opts.width or math.floor(vim.o.lines * 0.8)
+	local height = opts.height or math.floor(vim.o.lines * 0.8)
 
 	local col = math.floor((vim.o.columns - width) / 2)
 	local row = math.floor((vim.o.lines - height) / 2)
@@ -41,9 +41,10 @@ local toggle_terminal = function()
 		if vim.bo[state.floating.buf].buftype ~= "terminal" then
 			vim.cmd.terminal()
 		end
-		vim.api.nvim_buf_set_keymap(0, "t", "<Esc>", "<C-\\><C-n>", { noremap = true })
-		vim.api.nvim_buf_set_keymap(0, "n", "q", "<Esc>:q<CR>", { noremap = true })
-		vim.api.nvim_buf_set_keymap(0, "n", "<Esc>", "<Esc>:q<CR>", { noremap = true })
+
+		vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { buffer = state.floating.buf })
+		vim.keymap.set("n", "q", "<Esc>:q<CR>", { buffer = state.floating.buf })
+		vim.keymap.set("n", "<Esc>", "<Esc>:q<CR>", { buffer = state.floating.buf })
 
 		vim.cmd("startinsert")
 	else
@@ -52,4 +53,4 @@ local toggle_terminal = function()
 end
 
 vim.api.nvim_create_user_command("Floatterminal", toggle_terminal, {})
-vim.api.nvim_set_keymap("n", "<space>ft", ":Floatterminal<CR>", {})
+vim.keymap.set("n", "<space>ft", ":Floatterminal<CR>", {})
